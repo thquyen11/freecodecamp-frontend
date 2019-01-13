@@ -1,0 +1,46 @@
+#pagewrapper-scatter{
+    background-color: white;
+}
+
+@mixin square($color) {
+    width: 15px;
+    height: 15px;
+    background-color: $color;
+}
+
+#visHolder
+{
+    border: 1px solid black;
+    position: relative;
+
+    span{
+        display: inline-block;
+    }
+
+    .no-doping{
+        @include square(orange);
+    }
+    
+    .yes-doping{
+        @include square(blue);
+    }
+
+    #lengend{
+        position: absolute;
+        left: 700px;
+        top: 300px;
+    }
+}
+
+body{
+    #tooltip{
+        position: absolute;
+        width: 300px;
+        opacity: .9;
+        border-radius: 5px;
+        background-color: #ccd4e2;
+    }
+}
+
+
+

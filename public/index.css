@@ -1,0 +1,9 @@
+/* *{
+    border: 1px solid black;
+} */
+
+#page-wrapper{
+    min-height: 100vh;
+    background-color: #305c5e;
+    font-family: 'Titillium Web', sans-serif; 
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Survey Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="survey-form.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container" id="page-wrapper">
+        <div class="container mb-5rem">
+            <h1 class="text-center" id="title">Survey Form</h1>
+        </div>
+        <div class="container col-md-6">
+            <p class="text-center" id="description">Let us know how we can improve freeCodeCamp</p>
+            <form id="survey-form">
+                <div class="form-group row">
+                    <label class="container col-6 text-right" for="name" id="name-label">*Name:</label>
+                    <div class="container col-6">
+                        <input type="text" id="name" class="form-control text-left" placeholder="Enter your name" autofocus required/>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="container col-6 text-right" for="email" id="email-label">*Email:</label>
+                    <div class="container col-6">
+                        <input type="email" id="email" class="form-control text-left" placeholder="Enter your Email" required>
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-control-feedback">Please enter correct email format</div>
+                </div>
+                <div class="form-group row">
+                    <label class="container col-6 text-right" for="number" id="number-label">*Age:</label>
+                    <div class="container col-6">
+                        <input type="number" id="number" min="1" max="125" class="form-control text-left" placeholder="Age">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="container col-6 text-right" for="dropdown">Which option best describes your current role?</label>
+                    <select class="form-control col-6" id="dropdown">
+                        <option selected disabled>Select an option</option>
+                        <option value=1>Student</option>
+                        <option value=2>Full Time Job</option>
+                        <option value=3>Full Time Learner</option>
+                        <option value=4>Prefer not to say</option>
+                        <option value=0>Other</option>
+                    </select>
+                </div>
+                <div class="form-group row">
+                    <label class="container col-6 text-right">What do you like most in FCC:</label>
+                    <div class="container col-6">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="survey-radio" id="radio1" value="option1" checked>
+                            <label class="form-check-label" for="radio1">Definitely</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="survey-radio" id="radio2" value="option2">
+                            <label class="form-check-label" for="radio1">
+                                Maybe
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="survey-radio" id="radio3" value="option3">
+                            <label class="form-check-label" for="radio1">
+                                Not sure
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="container col-6 text-right">
+                        <p>Things that should be improved in the future (Check all that apply):</p>
+                    </div>
+                    <div class="container col-6">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="frontend" id="check1">
+                            <label class="form-check-label" for="check1">
+                                Front-end Projects
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="backend" id="check1">
+                            <label class="form-check-label" for="check1">
+                                Back-end Projects
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="data" id="check1">
+                            <label class="form-check-label" for="check1">
+                                Data Visualization
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="container col-6 text-right">Any Comments or Suggestions?</label>
+                    <textarea class="form-control col-6" id="textarea" rows="20" placeholder="Enter your comment here..."></textarea>
+                </div>
+                <div class="row">
+                    <input type="submit" class="btn btn-primary ml-auto mr-auto" id="submit" value="Submit"/>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

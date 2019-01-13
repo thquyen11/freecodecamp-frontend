@@ -1,0 +1,12 @@
+# Button SignIn , Register on Navbar
+# Click to SignIn => Signin page
+## Click Submit => POST (userName, userPassword) to server
+    =>return 200 + token => setState isSignedIn = 1 + save token to window.localStorage => reroute to Index page
+    =>return 401 => alert "username or password is not correct"
+# Click to Register => Register page => POST (userName, userPassword) to server
+    =>return 200 => alert "user registered successful" => reroute to sign in page
+    =>return 400 => alert "userName already exist"
+
+# User already signed in? hide SignIn, Register => show userProfile, SignOut Button
+# Click on Signout => setState isSignedIn = 0 + UPDATE token to server (to remove from Redis)
+# Click on userProfile => GET (userId) pop up Modal 

@@ -1,0 +1,25 @@
+#pagewrapper-barchart{
+    background-color: white;
+}
+
+.container #visHolder{
+    justify-content: center;
+    position: relative;
+}
+
+.container #visHolder #tooltip{
+    position: absolute;
+    width: 10rem;
+    border-radius: 5px;
+    background-color: #b6bac1;
+    opacity: 0.9;
+}
+
+$rectColor : #14a8e2;
+.container #visHolder svg rect{
+    fill: $rectColor;
+}
+
+.container #visHolder svg rect:hover{
+    fill: lighten($rectColor, 20%);
+}

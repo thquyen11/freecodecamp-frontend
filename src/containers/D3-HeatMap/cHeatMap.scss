@@ -1,0 +1,21 @@
+#pagewrapper-heatmap
+{
+    background-color: white;
+    overflow: visible;
+
+    #visHolder{
+        position: relative;
+
+        rect:hover{
+            stroke-width: 2;
+            stroke: black;
+        }
+    }
+}
+
+body{
+    #tooltip{
+    width: 200px;
+    }
+}
+

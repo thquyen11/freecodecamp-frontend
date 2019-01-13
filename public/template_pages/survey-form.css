@@ -1,0 +1,13 @@
+/* * {
+    border: 1px solid black;
+} */
+
+#textarea{
+    height: 75px;
+    border: 1px solid grey;
+}
+
+/* #test{
+    margin-left: auto;
+    margin-right: auto;
+} */

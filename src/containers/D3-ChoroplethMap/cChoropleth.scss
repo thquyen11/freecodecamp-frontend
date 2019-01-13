@@ -1,0 +1,25 @@
+body{
+    #tooltip{
+        position: absolute;
+        visibility: hidden;
+        opacity: .7;
+        border-radius: 5px;
+        width: 200px;
+        height: 3rem;
+    }
+}
+
+#pagewrapper-choro{
+    background: white;
+    padding: 20px 10px;
+
+    #visHolder{
+        position: relative;
+        border: 1px solid blue;
+    
+        path:hover{
+            stroke: black;
+        }
+    }
+}
+
