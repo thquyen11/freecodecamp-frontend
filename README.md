@@ -1,9 +1,9 @@
 
 # Freecodecamp Frontend
 
-* Collections of all frontend related projects I did in [freecodecamp](https://learn.freecodecamp.org/) of full stack web developer certifications program
+* Collection of all frontend related projects I did in [freecodecamp](https://learn.freecodecamp.org/) of full stack web developer certifications program
 
-* I will use it as a code base for my personnal blog where I share my coding journey, programming knowledge and how I build my blog
+* I will use it as a code base for my personnal blog where I share my coding journey, programming knowledge and how I build my personnal blog
 
 ## Project lists
 ### Basic Front End Development - HTML CSS
@@ -28,6 +28,12 @@
 - [ ] Visualize Data with a Choropleth Map
 - [ ] Visualize Data with a Tremap Diagram
 
+## Prerequisties
+
+* Node.js
+* Typescript
+* React.js, Redux
+
 ## How to run
 
 * Clone this repository
@@ -36,7 +42,7 @@
 
 ## Authors
 
-* **Quyen Ho** - *Initial work* - [Currency Calculator]()
+* **Quyen Ho**
 
 ## License
 
